@@ -33,6 +33,18 @@ class array:
         if condition == False:
             self.index = "Not Found"
 
+    def sort(self):
+
+        n = len(self.a)
+        array = self.a
+
+        for i in range(n):
+            for i in range(n):
+                if i < n-1 and array[i] > array[i+1]:
+                    array[i+1], array[i] = array[i], array[i+1]
+
+        self.sorted = array
+
 
 class list:
 
